@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Darryls Dinner Diner</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Welcome to the D$ Cafe</h1>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row order-form">
+            <form onsubmit="app.controllers.orderController.addOrder(event)">
+                <label for="description">Description:</label>
+                <input type="text" name="description" id="description" required>
+                <label for="table">Table Number:</label>
+                <input type="number" name="table" id="table" required>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Current Orders</h2>
+                <ol id="orders">
+                    <!-- <li>Test Order <i class="fas fa-spinner fa-pulse"></i></li> -->
+                    <!-- <li>Test order 2 <button onclick="app.controllers.orderController.serveFood()">Serve Food</button> -->
+                    <!-- </li> -->
+                    <!-- ORDERS RENDER HERE -->
+                </ol>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
